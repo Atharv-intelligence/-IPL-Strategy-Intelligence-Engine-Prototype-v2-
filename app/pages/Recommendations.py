@@ -1,4 +1,11 @@
 import streamlit as st
+import sys
+from pathlib import Path
+
+# Add project root to Python path
+ROOT_DIR = Path(__file__).resolve().parents[2]
+if str(ROOT_DIR) not in sys.path:
+    sys.path.append(str(ROOT_DIR))
 
 from analytics.preprocessing import load_data
 from analytics.feature_engineering import (
