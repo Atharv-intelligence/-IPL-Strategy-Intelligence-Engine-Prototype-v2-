@@ -1,6 +1,6 @@
 import pandas as pd
 
-from preprocessing import load_data
+from analytics.preprocessing import load_data
 from feature_engineering import (
     create_phase_feature,
     create_wicket_feature

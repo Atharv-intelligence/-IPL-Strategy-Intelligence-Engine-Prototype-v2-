@@ -1,7 +1,7 @@
 
 import pandas as pd
 
-from preprocessing import load_data
+from analytics.preprocessing import load_data
 
 
 def get_top_run_scorers(df):
